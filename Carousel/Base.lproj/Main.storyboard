@@ -16,10 +16,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="1136"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_tile1" id="j50-TI-Axa">
-                                <rect key="frame" x="0.0" y="387" width="153" height="152"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_tile4" id="chE-tk-XOZ">
                                 <rect key="frame" x="-7" y="321" width="153" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -28,16 +24,20 @@
                                 <rect key="frame" x="79" y="321" width="153" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_tile2" id="GRg-QN-yII">
-                                <rect key="frame" x="84" y="387" width="153" height="152"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_tile6" id="uwp-Mm-4sC">
+                                <rect key="frame" x="167" y="321" width="153" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_tile3" id="tzy-rX-Lzz">
                                 <rect key="frame" x="167" y="398" width="153" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_tile6" id="uwp-Mm-4sC">
-                                <rect key="frame" x="167" y="321" width="153" height="152"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_tile2" id="GRg-QN-yII">
+                                <rect key="frame" x="84" y="387" width="153" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_tile1" id="j50-TI-Axa">
+                                <rect key="frame" x="0.0" y="387" width="153" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -48,6 +48,8 @@
                     <connections>
                         <outlet property="IntroImageView" destination="r8M-Np-BFe" id="qRv-dr-jHI"/>
                         <outlet property="IntroScrollView" destination="Do4-eq-f96" id="ci4-mY-AnB"/>
+                        <outlet property="IntroTile1" destination="j50-TI-Axa" id="qgK-Pw-GaY"/>
+                        <outlet property="IntroTile2" destination="GRg-QN-yII" id="mIA-F6-YTR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oak-ac-MNp" userLabel="First Responder" sceneMemberID="firstResponder"/>
