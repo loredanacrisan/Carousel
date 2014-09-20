@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FFB9269919CD5B410080DB46 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9269819CD5B410080DB46 /* IntroViewController.swift */; };
 		FFFA953119CD506600E9D329 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFA953019CD506600E9D329 /* AppDelegate.swift */; };
 		FFFA953319CD506600E9D329 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFA953219CD506600E9D329 /* ViewController.swift */; };
 		FFFA953619CD506600E9D329 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFFA953419CD506600E9D329 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FFB9269819CD5B410080DB46 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		FFFA952B19CD506600E9D329 /* Carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFFA952F19CD506600E9D329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFFA953019CD506600E9D329 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 		FFFA952219CD506600E9D329 = {
 			isa = PBXGroup;
 			children = (
+				FFB9269819CD5B410080DB46 /* IntroViewController.swift */,
 				FFFA952D19CD506600E9D329 /* Carousel */,
 				FFFA954319CD506600E9D329 /* CarouselTests */,
 				FFFA952C19CD506600E9D329 /* Products */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFB9269919CD5B410080DB46 /* IntroViewController.swift in Sources */,
 				FFFA953319CD506600E9D329 /* ViewController.swift in Sources */,
 				FFFA953119CD506600E9D329 /* AppDelegate.swift in Sources */,
 			);
@@ -405,6 +409,7 @@
 				FFFA954C19CD506600E9D329 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFFA954D19CD506600E9D329 /* Build configuration list for PBXNativeTarget "CarouselTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				FFFA954F19CD506600E9D329 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
