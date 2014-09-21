@@ -8,10 +8,11 @@
 
 import UIKit
 
-class SignInViewController: UIViewController {
+class SignInViewController: UIViewController, UIAlertViewDelegate {
 
     @IBOutlet weak var LoginFormView: UIView!
-    @IBOutlet weak var SignInButtons: UIImageView!
+
+    @IBOutlet weak var ButtonsView: UIView!
     override func viewDidLoad() {
         
         
@@ -22,6 +23,9 @@ class SignInViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    @IBAction func onTap(sender: UITapGestureRecognizer) {
+        view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,10 +44,9 @@ class SignInViewController: UIViewController {
         
         println("hello")
         
-        print(SignInButtons.frame.height)
         
         UIView.animateWithDuration(animationDuration, delay: 0.0, options: UIViewAnimationOptions.fromRaw(UInt(animationCurve << 16))!, animations: {
-            self.SignInButtons.frame.origin.y = self.view.frame.size.height - kbSize.height - self.SignInButtons.frame.size.height
+            self.ButtonsView.frame.origin.y = self.view.frame.size.height - kbSize.height - self.ButtonsView.frame.size.height
         
         self.LoginFormView.frame.origin.y = 75  }, completion: nil)
     
@@ -56,6 +59,7 @@ class SignInViewController: UIViewController {
         
     }
     
+
 
     /*
     // MARK: - Navigation
