@@ -13,14 +13,30 @@ import UIKit
 class IntroViewController: UIViewController {
     @IBOutlet weak var IntroScrollView: UIScrollView!
 
+    @IBOutlet weak var IntroTile6: UIImageView!
+    @IBOutlet weak var IntroTile5: UIImageView!
+    @IBOutlet weak var IntroTile4: UIImageView!
+    @IBOutlet weak var IntroTile3: UIImageView!
     @IBOutlet weak var IntroTile2: UIImageView!
     @IBOutlet weak var IntroTile1: UIImageView!
     @IBOutlet weak var IntroImageView: UIImageView!
+    
+    
     override func viewDidLoad() {
         
-        IntroTile1.transform = CGAffineTransformMakeRotation(CGFloat(M_PI)/6)
+        IntroTile1.transform = CGAffineTransformMakeRotation(CGFloat(345*M_PI)/180)
         
-         IntroTile2.transform = CGAffineTransformMakeRotation(CGFloat(M_PI)/80)
+         IntroTile2.transform = CGAffineTransformMakeRotation(CGFloat(10*M_PI)/180)
+        
+         IntroTile3.transform = CGAffineTransformMakeRotation(CGFloat(350*M_PI)/180)
+        
+          IntroTile4.transform = CGAffineTransformMakeRotation(CGFloat(5*M_PI)/180)
+        
+         IntroTile5.transform = CGAffineTransformMakeRotation(CGFloat(340*M_PI)/180)
+        
+            IntroTile6.transform = CGAffineTransformMakeRotation(CGFloat(8*M_PI)/180)
+        
+        
         
         IntroScrollView.contentSize = IntroImageView.frame.size
         

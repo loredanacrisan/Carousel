@@ -17,27 +17,27 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_tile4" id="chE-tk-XOZ">
-                                <rect key="frame" x="-7" y="321" width="153" height="152"/>
+                                <rect key="frame" x="-7" y="336" width="153" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_tile5" id="RXn-Ep-j6A">
-                                <rect key="frame" x="79" y="321" width="153" height="152"/>
+                                <rect key="frame" x="79" y="336" width="153" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_tile6" id="uwp-Mm-4sC">
-                                <rect key="frame" x="167" y="321" width="153" height="152"/>
+                                <rect key="frame" x="167" y="336" width="153" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_tile3" id="tzy-rX-Lzz">
-                                <rect key="frame" x="167" y="398" width="153" height="152"/>
+                                <rect key="frame" x="182" y="426" width="153" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_tile2" id="GRg-QN-yII">
-                                <rect key="frame" x="84" y="387" width="153" height="152"/>
+                                <rect key="frame" x="89" y="426" width="153" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_tile1" id="j50-TI-Axa">
-                                <rect key="frame" x="0.0" y="387" width="153" height="152"/>
+                                <rect key="frame" x="-13" y="426" width="153" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -50,6 +50,10 @@
                         <outlet property="IntroScrollView" destination="Do4-eq-f96" id="ci4-mY-AnB"/>
                         <outlet property="IntroTile1" destination="j50-TI-Axa" id="qgK-Pw-GaY"/>
                         <outlet property="IntroTile2" destination="GRg-QN-yII" id="mIA-F6-YTR"/>
+                        <outlet property="IntroTile3" destination="tzy-rX-Lzz" id="v5z-fH-0bX"/>
+                        <outlet property="IntroTile4" destination="chE-tk-XOZ" id="7jM-HS-LY3"/>
+                        <outlet property="IntroTile5" destination="RXn-Ep-j6A" id="fQ0-33-S2D"/>
+                        <outlet property="IntroTile6" destination="uwp-Mm-4sC" id="WlZ-hq-Hn3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oak-ac-MNp" userLabel="First Responder" sceneMemberID="firstResponder"/>
