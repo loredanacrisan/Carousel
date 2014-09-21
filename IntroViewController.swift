@@ -10,7 +10,7 @@ import UIKit
 
 
 
-class IntroViewController: UIViewController {
+class IntroViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var IntroScrollView: UIScrollView!
 
     @IBOutlet weak var IntroTile6: UIImageView!
@@ -40,9 +40,10 @@ class IntroViewController: UIViewController {
         
         IntroScrollView.contentSize = IntroImageView.frame.size
         
-        println(IntroImageView.frame.size)
+        
         
         super.viewDidLoad()
+        IntroScrollView.delegate = self
 
         // Do any additional setup after loading the view.
     }
