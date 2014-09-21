@@ -124,6 +124,9 @@
                                         <state key="normal" title="Button">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Ouj-UF-Gv3" kind="modal" id="ukw-oE-FqA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -150,7 +153,23 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1312" y="-234"/>
+            <point key="canvasLocation" x="1336" y="-283"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bwa-xY-a8r">
+            <objects>
+                <viewController id="Ouj-UF-Gv3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CwH-CZ-u9f">
+                        <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1280" height="568"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WST-zz-EpF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2214" y="-283"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zKG-dk-jQu">
