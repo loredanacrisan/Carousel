@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF1DCCE919CF78DA0016920C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1DCCE819CF78DA0016920C /* SignInViewController.swift */; };
 		FFB9269919CD5B410080DB46 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9269819CD5B410080DB46 /* IntroViewController.swift */; };
 		FFFA953119CD506600E9D329 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFA953019CD506600E9D329 /* AppDelegate.swift */; };
 		FFFA953319CD506600E9D329 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFA953219CD506600E9D329 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF1DCCE819CF78DA0016920C /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		FFB9269819CD5B410080DB46 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		FFFA952B19CD506600E9D329 /* Carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFFA952F19CD506600E9D329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				FFFA953019CD506600E9D329 /* AppDelegate.swift */,
 				FFFA953219CD506600E9D329 /* ViewController.swift */,
 				FFFA953419CD506600E9D329 /* Main.storyboard */,
+				FF1DCCE819CF78DA0016920C /* SignInViewController.swift */,
 				FFFA953719CD506600E9D329 /* Images.xcassets */,
 				FFFA953919CD506600E9D329 /* LaunchScreen.xib */,
 				FFFA952E19CD506600E9D329 /* Supporting Files */,
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1DCCE919CF78DA0016920C /* SignInViewController.swift in Sources */,
 				FFB9269919CD5B410080DB46 /* IntroViewController.swift in Sources */,
 				FFFA953319CD506600E9D329 /* ViewController.swift in Sources */,
 				FFFA953119CD506600E9D329 /* AppDelegate.swift in Sources */,
