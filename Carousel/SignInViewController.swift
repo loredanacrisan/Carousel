@@ -13,6 +13,13 @@ class SignInViewController: UIViewController, UIAlertViewDelegate {
     @IBOutlet weak var LoginFormView: UIView!
 
     @IBOutlet weak var ButtonsView: UIView!
+    
+    @IBOutlet weak var EmailTextField: UITextField!
+    
+    @IBOutlet weak var PasswordTextField: UITextField!
+    
+    
+    
     override func viewDidLoad() {
         
         
@@ -24,9 +31,92 @@ class SignInViewController: UIViewController, UIAlertViewDelegate {
 
         // Do any additional setup after loading the view.
     }
+    
+    
+    // Setup delay function
+    
+    func delay(delay:Double, closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
+    }
+    
+    // Dismiss keyboard on tap
+
     @IBAction func onTap(sender: UITapGestureRecognizer) {
         view.endEditing(true)
     }
+    
+    // Sign-in logic
+    
+    @IBAction func onSignIn(sender: UIButton) {
+        
+        if (EmailTextField.text == "") || (PasswordTextField.text == "") {
+            println("no text")
+            
+            var alertview = UIAlertView(title: "Missing fields", message: "You need to type your email and password", delegate: nil, cancelButtonTitle:"Fine!")
+            alertview.show()
+        }
+        
+        else {
+        
+            println("youtappedme")
+        
+            var alertview = UIAlertView(title: "Loading...", message: nil, delegate: nil, cancelButtonTitle:nil)
+            alertview.show()
+            
+            
+    
+        
+            delay(2) {
+            
+                alertview.dismissWithClickedButtonIndex(0, animated: true)
+                
+                
+                if (self.EmailTextField.text == "me") && (self.PasswordTextField.text == "metoo") {
+                    
+                    println("you got it")
+                        
+                    self.performSegueWithIdentifier("signin", sender: self)
+                        
+                    }
+                    
+                else {
+                        
+                        
+                    var alertview = UIAlertView(title: "Incorrect email or password", message: "Check your credentials and try again", delegate: nil, cancelButtonTitle:"Fine!")
+                        alertview.show()
+                    
+                    self.EmailTextField.text = ""
+                    self.PasswordTextField.text = ""
+                        
+                    }
+                }
+        
+            
+            
+        }
+        
+    }
+//    @IBAction func onTap(sender: AnyObject) {
+//        
+//        println("youtappedme")
+//        
+//        var alertview = UIAlertView(title: "Loading", message: "Checking credentials...", delegate: nil, cancelButtonTitle: "okay")
+//        
+//        alertview.show()
+//        
+//        delay(2) {
+//            
+//            self.performSegueWithIdentifier("proceedtologin", sender: self)
+//        }
+//        
+//        
+//    }
+//    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -53,11 +143,16 @@ class SignInViewController: UIViewController, UIAlertViewDelegate {
 
     
     }
+
     
     func keyboardWillHide(notification: NSNotification!) {
         println("bye")
         
     }
+    
+    
+    
+    
     
 
 
