@@ -158,15 +158,15 @@
             </objects>
             <point key="canvasLocation" x="1336" y="-283"/>
         </scene>
-        <!--View Controller-->
+        <!--Tutorial-->
         <scene sceneID="bwa-xY-a8r">
             <objects>
-                <viewController id="Ouj-UF-Gv3" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CwH-CZ-u9f">
+                <viewController id="Ouj-UF-Gv3" userLabel="Tutorial" customClass="TutorialViewController" customModule="Carousel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="CwH-CZ-u9f">
                         <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="dZJ-s1-0Bs">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" id="dZJ-s1-0Bs">
                                 <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
@@ -186,14 +186,25 @@
                                         <rect key="frame" x="960" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="i83-4Q-UoP">
+                                        <rect key="frame" x="133" y="507" width="55" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="pageIndicatorTintColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="currentPageIndicatorTintColor" red="0.90697180710000003" green="0.38657041489999999" blue="0.40465980800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </pageControl>
                                 </subviews>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="h6F-1C-SLV"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1280" height="568"/>
+                    <connections>
+                        <outlet property="pageControl" destination="i83-4Q-UoP" id="sYf-yQ-po6"/>
+                        <outlet property="scrollView" destination="dZJ-s1-0Bs" id="r49-Nc-5dJ"/>
+                        <outlet property="welcomeImage1" destination="Qih-g4-ufx" id="PYv-Kc-mCA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WST-zz-EpF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
