@@ -8,20 +8,26 @@
 
 import UIKit
 
-class TutorialViewController: UIViewController {
+class TutorialViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var scrollView: UIScrollView!
     
     @IBOutlet weak var pageControl: UIPageControl!
 
     @IBOutlet weak var welcomeImage1: UIImageView!
+    
+    @IBOutlet weak var spinButton: UIButton!
+    
     override func viewDidLoad() {
     
         super.viewDidLoad()
         
+        scrollView.delegate = self
+        
         scrollView.contentSize = CGSize(width: 1280, height: 568)
         print(scrollView.contentSize)
-
+        
+        
         // Do any additional setup after loading the view.
     }
 
@@ -29,6 +35,27 @@ class TutorialViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+     // Set page dot
+    
+    func scrollViewDidScroll(scrollView: UIScrollView!) {
+        
+        
+        var page : Int = Int(round(scrollView.contentOffset.x / 320))
+        
+        
+        self.pageControl.currentPage = page
+        
+        if (page==3){
+        UIView.animateWithDuration(0.3){
+            self.spinButton.alpha = 1
+            }
+        }
+        else {
+            spinButton.alpha = 0
+        }
+    }
+
     
 
     /*
