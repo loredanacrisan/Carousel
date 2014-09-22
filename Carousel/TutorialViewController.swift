@@ -18,6 +18,9 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var spinButton: UIButton!
     
+    
+    @IBOutlet weak var backupSwitch: UISwitch!
+    
     override func viewDidLoad() {
     
         super.viewDidLoad()
@@ -49,10 +52,13 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
         if (page==3){
         UIView.animateWithDuration(0.3){
             self.spinButton.alpha = 1
+            self.backupSwitch.alpha = 1
             }
+            
         }
         else {
             spinButton.alpha = 0
+            self.backupSwitch.alpha = 0
         }
     }
 
