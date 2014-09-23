@@ -21,11 +21,7 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var IntroTile1: UIImageView!
     @IBOutlet weak var IntroImageView: UIImageView!
     
-    
-    var yOffsets : [Float] = [-285, -240, -415, -408, -480, -500]
-    var xOffsets : [Float] = [-30, 75, -66, 10, -200, -15]
-    var scales : [Float] = [1, 1.65, 1.7, 1.6, 1.65, 1.65]
-    var rotations : [Float] = [-10, -10, 10, 10, 10, -10]
+
     
     func convertValue(value: Float, r1Min: Float, r1Max: Float, r2Min: Float, r2Max: Float) -> Float {
         var ratio = (r2Max - r2Min) / (r1Max - r1Min)
