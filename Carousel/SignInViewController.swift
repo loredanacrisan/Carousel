@@ -147,10 +147,30 @@ class SignInViewController: UIViewController, UIAlertViewDelegate {
     
     func keyboardWillHide(notification: NSNotification!) {
         println("bye")
+        var userInfo = notification.userInfo!
+        
+    
+    
+        var durationValue = userInfo[UIKeyboardAnimationDurationUserInfoKey] as NSNumber
+        var animationDuration = durationValue.doubleValue
+        var curveValue = userInfo[UIKeyboardAnimationCurveUserInfoKey] as NSNumber
+        var animationCurve = curveValue.integerValue
+        
+        println("hello")
+        
+        
+        UIView.animateWithDuration(animationDuration, delay: 0.0, options: UIViewAnimationOptions.fromRaw(UInt(animationCurve << 16))!, animations: {
+            self.ButtonsView.frame.origin.y = 417
+            
+            self.LoginFormView.frame.origin.y = 152  }, completion: nil)
+
         
     }
     
     
+    @IBAction func onBack(sender: UIButton) {
+        navigationController!.popViewControllerAnimated(true)
+    }
     
     
     
